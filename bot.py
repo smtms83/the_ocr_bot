@@ -79,7 +79,7 @@ def button(update, context):
 
     configuration = cloudmersive_ocr_api_client.Configuration()
     #Enter Your cloudmersive api key in place of  os.environ.get(...........)
-    configuration.api_key['Apikey'] = os.environ.get("CLOUDMERSIVE_API","")
+    configuration.api_key['Apikey'] = os.environ.get("85d629c6-37bd-4a36-99a2-a3e163ff9f91","")
     api_instance = cloudmersive_ocr_api_client.ImageOcrApi(cloudmersive_ocr_api_client.ApiClient(configuration))
     try:
         lang=query.data
@@ -100,7 +100,7 @@ def donate(update,context):
     return donate
 	
 def main(): 
-    bot_token=os.environ.get("BOT_TOKEN", "")
+    bot_token=os.environ.get("1544743904:AAEHLjrGRBXBythnxwv2VmDxheZyX0AmoLo", "")
     updater = Updater(bot_token,use_context=True)
     dp=updater.dispatcher
     dp.add_handler(CommandHandler('start',start))
